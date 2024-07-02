@@ -1,0 +1,31 @@
+{
+  "canisters": {
+    "tutorial": {
+      "build": "npx azle tutorial",
+      "candid": "src/tutorial/tutorial.did",
+      "gzip": true,
+      "candid_gen": "http",
+      "main": "src/tutorial/src/index.ts",
+      "type": "custom",
+      "wasm": ".azle/tutorial/tutorial.wasm",
+      "metadata": [
+        {
+            "name": "candid:service",
+            "path": "src/tutorial/tutorial.did"
+        },
+        {
+            "name": "cdk:name",
+            "content": "azle"
+        }
+    ]
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
